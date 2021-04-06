@@ -35,8 +35,9 @@ h1, h2, h3 {
 /* Default style for marks and channels used */
 .point {
   fill: white;
-  stroke: #69b3a2;
+  stroke: #558d80;
   stroke-width: 3;
+  opacity: .5;
 }
 
 .linePath {

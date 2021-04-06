@@ -6,7 +6,7 @@ Link to your GitHub pages website: `[insert your *clickable* hyperlink here]`
 
 # Aim of the assignment
 
-This assignment will help you get started with brushing and linking which you will need for your project.
+This assignment will help you get started with brushing and linking, which you will need for your project.
 You will be creating a new table that is connected to the existing scatterplot and line chart using brushing and linking.
 
 # Instructions
@@ -17,11 +17,11 @@ Please look through **all** the materials below so you understand the setup inst
 **Under no circumstances should you be editing files via the GitHub website user interface.** Do all your edits locally after cloning the repository. Commit major versions to your git repository.
 
 1. Clone this repository to your local machine.
-    E.g., in your terminal / command prompt `CD` to where you want this the folder for this activity to be. Then run `git clone <YOUR_REPO_URL>`
+    E.g., in your terminal / command prompt `CD` to where you want this the folder for this activity to be. Then, run `git clone <YOUR_REPO_URL>`
 
 1. `CD` or open a terminal / command prompt window into the cloned folder.
 
-1. Start a simple python webserver. E.g., `python -m http.server`, `python3 -m http.server`, or `py -m http.server`. If you are using python 2 you will need to use `python -m SimpleHTTPServer` instead, but please switch to python 3 as [Python 2 was sunset on 2020-01-01](https://www.python.org/doc/sunset-python-2/).
+1. Start a simple python webserver. E.g., `python -m http.server`, `python3 -m http.server`, or `py -m http.server`. If you are using python 2 you will need to use `python -m SimpleHTTPServer` instead, but please switch to python 3, as [Python 2 was sunset on 2020-01-01](https://www.python.org/doc/sunset-python-2/).
 
 1. Wait for the output: `Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/)`.
 
@@ -29,9 +29,9 @@ Please look through **all** the materials below so you understand the setup inst
 
 ## Update hyperlinks
 
-1. Edit near the top of this `README.md` file to include a clickable hyperlink to the GitHub pages website for your repo., replacing the `` `[insert your *clickable* hyperlink here]` `` code with your markdown. (Detailed instructions for GitHub pages [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Using_Github_pages).)
+1. Edit near the top of this `README.md` file to include a clickable hyperlink to the GitHub pages website for your repository, replacing the `` `[insert your *clickable* hyperlink here]` `` code with your markdown. (Detailed instructions for GitHub pages [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Using_Github_pages).)
 
-1. In `index.html` update the GitHub repo URL with the URL of your repository. It is in the span with `id='forkongithub'`.
+1. In `index.html`, update the GitHub repo URL with the URL of your repository. It is in the span with `id='forkongithub'`.
 
 ## Organization
 
@@ -53,7 +53,7 @@ Each folder has an explanatory `README.md` file.
 
 * `favicons` contains the favicons for the web page. You shouldn't change anything here.
 
-* `.github` contains [GitHub Actions](https://github.com/features/actions) ([docs](https://docs.github.com/en/actions)) which will automatically validate your HTML, CSS, and hyperlinks when you push (see the [**validation last step** below](#validated)). **Do not edit files here** except to create new `.yml` files for any additional actions you choose to add (you are not required to make any).
+* `.github` contains [GitHub Actions](https://github.com/features/actions) ([docs](https://docs.github.com/en/actions)), which will automatically validate your HTML, CSS, and hyperlinks when you push (see the [**validation last step** below](#validated)). **Do not edit files here** except to create new `.yml` files for any additional actions you choose to add (you are not required to make any).
 
 * `img` contains a descriptive image for the `README.md`.
 
@@ -163,8 +163,8 @@ let dispatcher = d3.dispatch('selectionUpdated');
 dispatcher.on('selectionUpdated', callback1);
 ```
 where `callback1` is a callback function for when the event happens.
-However, to have multiple listeners for that same event you would need to have unique suffixes for the same string beginning with '`.`'.
-E.g., to have both the line chart and table listening to scatterplot updates we could have
+However, to have multiple listeners for that same event, you would need to have unique suffixes for the same string beginning with '`.`'.
+E.g., to have both the line chart and table listening to scatterplot updates, we could have
 ```js
 dispatcher.on('selectionUpdated.sp-to-lc', callback1);
 dispatcher.on('selectionUpdated.sp-to-tab', callback1);
